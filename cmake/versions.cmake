@@ -46,7 +46,7 @@ set(PTHREADS_URI http://sourceforge.mirrorservice.org/p/pt/pthreads4w/pthreads4w
 set(PTHREADS_HASH f3bf81bb395840b3446197bcf4ecd653)
 
 set(ILMBASE_VERSION 2.3.0)
-if (WIN32)
+if(WIN32)
   if(BUILD_MODE STREQUAL Release)
     set(ILMBASE_VERSION_POSTFIX _s)
     set(OPENEXR_VERSION_POSTFIX _s)
@@ -61,7 +61,7 @@ set(ILMBASE_URI https://github.com/openexr/openexr/releases/download/v${ILMBASE_
 set(ILMBASE_HASH 354bf86de3b930ab87ac63619d60c860)
 
 set(OPENEXR_VERSION 2.3.0)
-if (WIN32) #release 2.3.0 tarball has broken cmake support
+if(WIN32) #release 2.3.0 tarball has broken cmake support
   set(OPENEXR_URI https://github.com/openexr/openexr/archive/0ac2ea34c8f3134148a5df4052e40f155b76f6fb.tar.gz)
   set(OPENEXR_HASH ed159435d508240712fbaaa21d94bafb)
 else()
@@ -302,3 +302,7 @@ set(SQLITE_HASH fb558c49ee21a837713c4f1e7e413309aabdd9c7)
 set(EMBREE_VERSION 3.2.4)
 set(EMBREE_URI https://github.com/embree/embree/archive/v${EMBREE_VERSION}.zip)
 set(EMBREE_HASH 3d4a1147002ff43939d45140aa9d6fb8)
+
+set(OIDN_VERSION 0.8.2)
+set(OIDN_URI https://github.com/OpenImageDenoise/oidn/releases/download/v${OIDN_VERSION}/oidn-${OIDN_VERSION}.src.zip)
+set(OIDN_HASH dbdee1a8ea91b81cbf3a6c7a7db41277)
