@@ -43,7 +43,7 @@ project("BlenderDependencies")
 cmake_minimum_required(VERSION 3.5)
 
 include(ExternalProject)
-#include(cmake/options.cmake)
+include(cmake/options.cmake)
 include(cmake/versions.cmake)
 
 #if(ENABLE_MINGW64)
